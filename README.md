@@ -2,7 +2,7 @@
 
 Simple application that has multiple screens to Create, Read, Update and Delete (CRUD) data.
 
-Click [here](https://resume-crud-app.herokuapp.com/index.php") to play with this app.
+Click [here](https://resume-crud-app.herokuapp.com/index.php) to play with this app.
 ___
 
 ### Concepts Used
