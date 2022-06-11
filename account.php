@@ -29,9 +29,9 @@
 		else
 		{
 			$checkPass = hash("md5", $salt . $password);
-			$sql = "SELECT * FROM users WHERE name = :nm AND email = :em AND password = :pw";
+			$sql = "SELECT * FROM users WHERE email = :em";
 			$stmt = $pdo->prepare($sql);
-			$stmt->execute(array(":nm" => $username, ":em" => $email, ":pw" => $checkPass));
+			$stmt->execute(array(":em" => $email));
 			$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 			if($row)
